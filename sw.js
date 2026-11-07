@@ -1,5 +1,5 @@
 /* Service worker: cache app shell + lazy-cached page images for offline reading */
-const CACHE = 'cet6-v1';
+const CACHE = 'cet6-v2';
 const SHELL = ['./','./index.html','./style.css','./app.js','./manifest.webmanifest','./img/manifest.json'];
 
 self.addEventListener('install', e => {

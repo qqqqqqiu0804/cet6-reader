@@ -1,4 +1,4 @@
-/* 英语六级真题 · 解析随身读 — mobile reader */
+/* 英语六级真题解析 · 随身读 — mobile reader */
 (function(){
   'use strict';
   const MANIFEST_URL = 'img/manifest.json';
@@ -55,9 +55,9 @@
       const filesHtml = term.files.map(f => {
         const pct = progress[f.slug] != null ? Math.round((progress[f.slug]+1)/f.pages*100) : 0;
         return '<button class="file" data-slug="'+f.slug+'">'+
-          '<span class="ft '+(f.type==='analysis'?'a':'p')+'">'+(f.type==='analysis'?'解':'题')+'</span>'+
+          '<span class="ft a">解</span>'+
           '<span class="fi"><span class="fn">'+esc(f.name)+'</span>'+
-          '<span class="fp">'+f.pages+' 页 · '+(f.type==='analysis'?'答案解析':'真题试卷')+'</span>'+
+          '<span class="fp">'+f.pages+' 页 · 答案解析</span>'+
           (pct>0?'<span class="prog"><i style="width:'+pct+'%"></i></span>':'')+
           '</span><span class="farrow">›</span></button>';
       }).join('');
