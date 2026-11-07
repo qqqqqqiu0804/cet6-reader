@@ -1,3 +1,6 @@
 .DS_Store
 *.tmp
 Thumbs.db
+
+# 构建缓存：记录每份 PDF 的指纹，用于增量判断
+.build-state.json
