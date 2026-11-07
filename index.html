@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,maximum-scale=5">
+<meta name="theme-color" content="#0f1115">
+<title>英语六级真题 · 解析随身读</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HOME -->
+<div id="home" class="home">
+  <div class="hero">
+    <h1>英语六级真题 · 解析随身读</h1>
+    <p>手机直达，竖屏翻页，离线也能看 · 2021–2026 真题 + 解析</p>
+  </div>
+  <div id="resume"></div>
+  <input id="search" class="search" placeholder="搜索年份 / 月份 / 卷号，如：2025 12 卷一" />
+  <div id="terms"></div>
+  <div class="foot">所有内容来自去水印 PDF，仅供个人学习使用。</div>
+</div>
+
+<!-- READER -->
+<div id="reader" class="reader">
+  <div class="rbar">
+    <button class="iconbtn" id="btnBack" style="width:38px;height:38px;font-size:22px">‹</button>
+    <button class="iconbtn" id="btnDir" style="width:38px;height:38px;font-size:18px">☰</button>
+    <div class="title" id="readerTitle" style="flex:1;font-size:14px"></div>
+    <button class="iconbtn" id="btnZoom" style="width:38px;height:38px;font-size:18px">⊕</button>
+  </div>
+  <div class="scroll" id="scroll"></div>
+  <div class="cbar">
+    <span class="pill" id="pageLabel">1 / 1</span>
+    <input id="pageInput" inputmode="numeric" placeholder="页" />
+    <button class="iconbtn" id="btnGo" style="width:38px;height:38px;font-size:16px">⏎</button>
+    <span class="grow"></span>
+    <button class="iconbtn" id="btnTop" style="width:38px;height:38px;font-size:16px">↑</button>
+  </div>
+  <div class="progress"><i id="progressBar"></i></div>
+  <div class="loading" id="loadingMsg" style="display:none">加载中…</div>
+</div>
+
+<!-- DRAWER -->
+<div id="drawer" class="drawer">
+  <div class="mask" id="drawerMask"></div>
+  <div class="panel">
+    <header>选择试卷 / 解析</header>
+    <div class="list" id="drawerList"></div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
